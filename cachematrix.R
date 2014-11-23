@@ -47,7 +47,7 @@ cacheSolve <- function(x, ...) {
   ## Return a matrix that is the inverse of 'x'
   m <- x$getInverse()
   
-  ## Just return the inverse if its already set
+  ## Return the inverse if its already set
   if( !is.null(m) ) {
     message("getting cached data")
     return(m)
@@ -62,7 +62,7 @@ cacheSolve <- function(x, ...) {
   ## Set the inverse to the object
   x$setInverse(m)
   
-  ## Return the matrix
+  ## Returning the matrix
   m
 }
 
